@@ -14,4 +14,18 @@ const divide = function(a, b) {
     return a / b;
 }
 
-console.log(divide(20, 4))
+const userChoice = prompt("Calculator:");
+
+function operate(a, b) {
+    if(userChoice === "+") {
+        return add(a, b);
+    } else if(userChoice === "-") {
+        return subtract(a, b);
+    } else if(userChoice === "*") {
+        return multiply(a, b);
+    } else if(userChoice === "/") {
+        return divide(a, b);
+    }
+}
+
+console.log(operate(2, 5));
