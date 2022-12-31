@@ -1,0 +1,11 @@
+body {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+#screen {
+    height: 50px;
+    width: 200px;
+    border: 1px solid black;
+}
