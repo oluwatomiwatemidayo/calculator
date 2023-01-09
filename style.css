@@ -17,3 +17,11 @@ body {
     width: 200px;
     border: 2px solid black;
 }
+
+#numbers {
+    padding: 5px;
+}
+
+button {
+    padding: 10px;
+}
