@@ -14,7 +14,11 @@ const divide = function(a, b) {
     return a / b;
 }
 
-function operate(a, b) {
+let userChoice = "";
+let a = "";
+let b = "";
+
+function operate(a, userChoice, b) {
     if(userChoice === "+") {
         return add(a, b);
     } else if(userChoice === "-") {
@@ -27,8 +31,6 @@ function operate(a, b) {
 }
 
 const display = document.querySelector('#screen');
-let number1 = "";
-let number2 = "";
 
 const one = document.querySelector('#one')
 one.addEventListener('click', ()  => {
@@ -84,55 +86,5 @@ const clear = document.querySelector('#clear');
 clear.addEventListener('click', ()  => {
     display.textContent = " ";
 });
+
 //console.log(operate(10, 5));
-
-
-/*function one() {
-    const one = document.querySelector('#one').textContent;
-    display.textContent = one;
-}
-
-function two() {
-    const two = document.querySelector('#two').textContent;
-    display.textContent = two;
-}
-
-function three() {
-    const three = document.querySelector('#three').textContent;
-    display.textContent = three;
-}
-
-function four() {
-    const four = document.querySelector('#four').textContent;
-    display.textContent = four;
-}
-
-function five() {
-    const five = document.querySelector('#five').textContent;
-    display.textContent = five;
-}
-
-function six() {
-    const six = document.querySelector('#six').textContent;
-    display.textContent = six;
-}
-
-function seven() {
-    const seven = document.querySelector('#seven').textContent;
-    display.textContent = seven;
-}
-
-function eight() {
-    const eight = document.querySelector('#eight').textContent;
-    display.textContent = eight;
-}
-
-function nine() {
-    const nine = document.querySelector('#nine').textContent;
-    display.textContent = nine;
-}
-
-function zero() {
-    const zero = document.querySelector('#zero').textContent;
-    display.textContent = zero;
-} */
